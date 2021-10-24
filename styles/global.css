@@ -1,0 +1,121 @@
+/* Reset do navegador */
+* {
+  border: 0;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --black: #0d114f;
+  --white: #fafafa;
+  --red: #e83f5b;
+  --light-blue: #e0ecff;
+  --blue: #3485ff;
+  --background: #fbfcff;
+  --overlay: #040911;
+  --icons-details: #a5b0c1;
+
+  --grey-dark: #4d5e77;
+  --grey-blue: #a1b2cd;
+  --grey-medium: #d3d9e2;
+  --grey-light: #e5eaf1;
+
+  --hover-blue: #5699ff;
+  --hover-red: #ea4b65;
+  --hover-gray: #8794a7;
+
+  font-size: calc(100% / 16 * 10);
+}
+
+body {
+  list-style-type: none;
+  background-color: var(--background);
+}
+
+body,
+input,
+button,
+textarea {
+  font-size: clamp(14px, 1.6rem, 2vw);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 2.2rem;
+  /* font-family: 'Poppins', sans-serif; */
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+  background-color: #e83f5b;
+  color: #3485ff;
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ----Inputs and buttons---- */
+button,
+input,
+.button {
+  height: 4.8rem;
+  border-radius: 0.8rem;
+
+
+}
+
+button,
+.button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 0;
+  /* font-size: 1.6rem; */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--white);
+  background: var(--blue);
+  cursor: pointer;
+
+  transition: filter 0.15s;
+}
+
+button:hover,
+.button:hover {
+  filter: brightness(1.2);
+}
+
+button > img,
+.button > img {
+  margin-right: 1rem;
+  width: 2rem;
+}
+
+button.outlined,
+.button.outlined {
+  background: var(--white);
+  color: var(--blue);
+  border: .2rem solid var(--blue);
+}
+
+.content header {
+  width: 80%;
+  margin: 3.5rem auto
+}
+
+.content header img{
+  width: 16.7rem;
+}
